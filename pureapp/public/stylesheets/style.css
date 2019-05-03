@@ -7,6 +7,12 @@ body{
 
 h1{
   font-size: 3rem;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+}
+
+.section{
+  padding-top: 25vh;
 }
 
 .main{
@@ -18,9 +24,12 @@ h1{
   background-color: #e2cdf4;
 }
 
-.btn-input{
-  margin-top: 10vh;
-  background-color: #ffeeee; 
+.form-input{
+    margin-bottom: 5vh;
+}
+
+.btn-input, .btn-trush{
+  background-color: #ffeeee;
 }
 
 .btn-result{
@@ -31,6 +40,10 @@ h1{
 .button.is-focused, .button:focus {
     border-color: #ffeeee;
     color: #fff;
+}
+
+.info{
+  margin-bottom: 10vh;
 }
 
 .icons8-trash-can {
