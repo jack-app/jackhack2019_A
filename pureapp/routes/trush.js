@@ -7,9 +7,3 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
-
-
-
-function win_close(){
-  window.close();
-}
