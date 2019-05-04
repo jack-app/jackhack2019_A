@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link rel='stylesheet' href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="navbar">
+
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="main main_result">
+          <h1>キレイになったよ！</h1>
+          <div class="control">
+            <textarea class="textarea" readonly>結果</textarea>
+          </div>
+          <form method="POST" action="{{ url_for('result') }}">
+             <button class="button is-focused is-large btn-result" type="submit"><div class="icons8-trash-can"></div>ゴミ箱へ</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

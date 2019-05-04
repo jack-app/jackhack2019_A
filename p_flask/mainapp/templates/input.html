@@ -1,0 +1,32 @@
+    <!-- <form method="POST" action="{{ url_for('result') }}">
+        <input type="text" name="msg">
+        <input type="submit" value="SEND">
+    </form> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link rel='stylesheet' href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="navbar">
+
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="main main_input">
+          <form method="POST" action="{{ url_for('result') }}">
+            <textarea class="textarea form-input" placeholder="心の声を教えて！" name="msg"></textarea>
+            <button class="button is-hovered is-large btn-input" type="submit" value="キレイにする！">キレイにする！</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
