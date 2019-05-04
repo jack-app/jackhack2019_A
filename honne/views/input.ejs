@@ -26,11 +26,6 @@
         <!--入力フォーム -->
         <div class="input-area">
           <h1><%= pagetitle %></h1>
-          <!-- <div class="field">
-            <div class="control">
-              <form><textarea class="textarea" placeholder="<%= comments %>"></textarea></form>
-            </div>
-          </div> -->
           <div class="control">
             <form method="POST" action="<%= url %>" id="<%= test %>">
               <textarea class="textarea" placeholder="これが私の本心だよ。" name="word"><%= comments %></textarea>
@@ -46,28 +41,16 @@
             comments: 'これが私の本心だよ。',
             classname: 'clean',
             url: '/input/post',
-            msg: 'キレイにする！'
+            msg: 'キレイにする！',
+            test: ''
           結果出力
             pagetitle: 'キレイになったよ！',
             comments: rslt（キレイになった文章）,
             classname: 'submit',
             url: '/show',
-            msg: '本音を言う' 
+            msg: '本音を言う',
+            test: 'test'
         -->
-
-        <!--結果出力 -->
-        <!-- <div class="output-area">
-          <h1>キレイになったよ！</h1>
-          <div class="field">
-              <div class="control">
-                <form><textarea class="textarea" placeholder="結果" readonly></textarea></form>
-              </div>
-          </div>
-          <div class="control">
-            <button class="button is-large submit" type="submit">本音を言う</button>
-          </div>
-        </div> -->
-        <!--ここまで-->
 
       </div>
     </section>

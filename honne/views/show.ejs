@@ -22,6 +22,7 @@
     </section>
     <section class="main">
       <div class="container">
+        <!-- 投稿されたワード一覧 -->
         <ul id="messages"></ul>
         <ul>
           <% for(var i in content) { %>
@@ -29,10 +30,7 @@
             <li><%= obj.cleaned %></li>
           <% } %>
         </ul>
-        <!-- <ul id="messages"></ul>
-        <form id="message_form" action="#">
-          <input id="input_msg" autocomplete="off"><button>SEND</button>
-        </form> -->
+        <!-- ここまで -->
       </div>
     </section>
 

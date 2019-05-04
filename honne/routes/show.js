@@ -7,7 +7,7 @@ var db = new sqlite3.Database('wordlog.sqlite3');
 /* GET処理 */
 router.get('/', function(req, res, next) {
   db.serialize(() => {
-    db.all('select * from wordlog', (err, rows)=>{
+    db.all('SELECT * FROM wordlog ORDER BY id desc', (err, rows)=>{
       if (!err) {
         var data = {
           content: rows
@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
 /* POST処理 */
 router.post('/', function(req, res, next) {
   db.serialize(() => {
-    db.all('select * from wordlog', (err, rows)=>{
+    db.all('SELECT * FROM wordlog ORDER BY id desc', (err, rows)=>{
       if (!err) {
         var data = {
           content: rows

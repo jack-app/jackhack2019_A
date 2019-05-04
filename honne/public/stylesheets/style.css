@@ -67,4 +67,8 @@ p{
   background-color: #FF6B75;
   color: #fff;
 }
+/* ADD by Michiro */
+#test textarea{
+  pointer-events: none; /*textarea入力不可にする*/
+}
 /*ここまで*/
