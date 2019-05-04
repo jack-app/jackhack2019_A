@@ -33,7 +33,7 @@
           </div> -->
           <div class="control">
             <form method="POST" action="<%= url %>">
-              <textarea class="textarea" placeholder="<%= comments %>" name="word"></textarea>
+              <textarea class="textarea" placeholder="これが私の本心だよ。" name="word"><%= comments %></textarea>
               <button class="button is-large <%= classname %>" type="submit"><%= msg %></button>
             </form>
           </div>
@@ -72,8 +72,11 @@
       </div>
     </section>
 
-    <script>
+    <!-- <script>
       var socket = io();
-    </script>
+      $(function(){
+
+      });
+    </script> -->
   </body>
 </html>

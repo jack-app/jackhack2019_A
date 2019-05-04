@@ -10,7 +10,7 @@ const request = require('sync-request');
 router.get('/', function(req, res, next) {
   var data = {
     pagetitle: '本音を教えて！',
-    comments: 'これが私の本心だよ。',
+    comments: '',
     classname: 'clean',
     url: '/input/post',
     msg: 'キレイにする！'
