@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
+var sqlite3 = require('sqlite3');
+var db = new sqlite3.Database('wordlog.sqlite3');
+
 var dic = require( '../../illdic-sample.json' );
 const URL = "https://mecab-web-api.herokuapp.com/v1/parse";
 const request = require('sync-request');
@@ -57,6 +60,9 @@ router.post('/post', function(req, res, next) {
       return text;
     }
     // END WATOSON FUNC
+
+    db.run('insert into wordlog (cleaned, room) values (?, ?)', rslt, 1);
+
     var data = {
       pagetitle: 'キレイになったよ！',
       comments: rslt,

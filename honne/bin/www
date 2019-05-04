@@ -22,18 +22,18 @@ app.set('port', port);
 var server = http.createServer(app);
 
 //socket.io
-var io = require('socket.io')(server);
-io.on('connection', function(socket){
-  socket.on('emit_from_c', function(data){
-    console.log(data);
-  });
+// var io = require('socket.io')(server);
+// io.on('connection', function(socket){
+//   socket.on('emit_from_c', function(data){
+//     console.log(data);
+//   });
 
-  // console.log('a user connected');
-  socket.on('message', function(msg) {
-    console.log('message: ' + msg);
-    io.emit('message', msg);
-  });
-});
+//   // console.log('a user connected');
+//   socket.on('message', function(msg) {
+//     console.log('message: ' + msg);
+//     io.emit('message', msg);
+//   });
+// });
 
 /**
  * Listen on provided port, on all network interfaces.

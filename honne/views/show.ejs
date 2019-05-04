@@ -13,7 +13,7 @@
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
             crossorigin="anonymous"></script>
     <script src="/javascripts/script.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
   </head>
   <body>
     <section class="header">
@@ -22,14 +22,22 @@
     </section>
     <section class="main">
       <div class="container">
-        <ul id="messages"></ul>
-        <!-- <form id="message_form" action="#">
+        <table>
+          <% for(var i in content) { %>
+          <tr>
+            <% var obj = content[i]; %>
+            <td><%= obj.cleaned %></td>
+          </tr>
+          <% } %>
+        </table>
+        <!-- <ul id="messages"></ul>
+        <form id="message_form" action="#">
           <input id="input_msg" autocomplete="off"><button>SEND</button>
         </form> -->
       </div>
     </section>
 
-    <script>
+    <!-- <script>
       var socketio = io();
       $(function(){
         $('#message_form').submit(function(){
@@ -41,6 +49,6 @@
           $('#messages').append($('<li>').text(msg));
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>
