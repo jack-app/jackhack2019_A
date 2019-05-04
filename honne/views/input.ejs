@@ -2,10 +2,53 @@
 <html>
   <head>
     <title>とある魔術の禁書目録2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="/javascripts/script.js"></script>
   </head>
   <body>
-    <h1>input</h1>
+    <section class="header">
+      <div class="navbar">
+      </div>
+    </section>
+    <section class="main">
+      <div class="container">
+
+        <!--入力フォーム -->
+        <div class="input-area">
+          <h1>本音を教えて！</h1>
+          <div class="field">
+            <div class="control">
+              <form><textarea class="textarea" placeholder="これが私の本心だよ。"></textarea></form>
+            </div>
+          </div>
+          <div class="control">
+            <button class="button is-large clean" type="submit">キレイにする！</button>
+          </div>
+        </div>
+        <!--ここまで-->
+
+
+        <!--結果出力 -->
+        <div class="output-area">
+          <h1>キレイになったよ！</h1>
+          <div class="field">
+              <div class="control">
+                <form><textarea class="textarea" placeholder="結果" readonly></textarea></form>
+              </div>
+          </div>
+          <div class="control">
+            <button class="button is-large submit" type="submit">本音を言う</button>
+          </div>
+        </div>
+        <!--ここまで-->
+
+      </div>
+    </section>
   </body>
 </html>

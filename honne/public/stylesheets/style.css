@@ -1,8 +1,53 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: #fff;
+  height: 100vh;
+  text-align: center;
 }
 
-a {
-  color: #00B7FF;
+section{
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
+
+.container{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.control{
+  text-align: center;
+}
+
+.navbar{
+  background-color: #C9E6F7;
+}
+
+h1{
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.button{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+
+/*input.ejs*/
+.input-area, .output-area{
+  margin-top: 25vh;
+  padding-bottom: 20vh;
+}
+
+.button.clean{
+  background-color: #FFEEEE;
+}
+
+.button.submit{
+  background-color: #FF6B75;
+  color: #fff;
+}
+/*ここまで*/
