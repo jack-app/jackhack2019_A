@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>とある魔術の禁書目録2</title>
+    <title>部屋の名前</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css.map">
@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="/javascripts/script.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
   </head>
   <body>
     <section class="header">
@@ -21,21 +22,23 @@
 
         <!--入力フォーム -->
         <div class="input-area">
-          <h1>本音を教えて！</h1>
+          <h1><%= pagetitle %></h1>
           <div class="field">
             <div class="control">
-              <form><textarea class="textarea" placeholder="これが私の本心だよ。"></textarea></form>
+              <form><textarea class="textarea" placeholder="<%= comments %>"></textarea></form>
             </div>
           </div>
           <div class="control">
-            <button class="button is-large clean" type="submit">キレイにする！</button>
+            <form method="POST" action="<%= url %>">
+              <button class="button is-large <%= classname %>" type="submit"><%= msg %></button>
+            </form>
           </div>
         </div>
         <!--ここまで-->
 
 
         <!--結果出力 -->
-        <div class="output-area">
+        <!-- <div class="output-area">
           <h1>キレイになったよ！</h1>
           <div class="field">
               <div class="control">
@@ -45,10 +48,14 @@
           <div class="control">
             <button class="button is-large submit" type="submit">本音を言う</button>
           </div>
-        </div>
+        </div> -->
         <!--ここまで-->
 
       </div>
     </section>
+
+    <script>
+      var socket = io();
+    </script>
   </body>
 </html>
