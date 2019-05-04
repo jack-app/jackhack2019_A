@@ -16,7 +16,8 @@ router.get('/', function(req, res, next) {
     comments: '',
     classname: 'clean',
     url: '/input/post',
-    msg: 'キレイにする！'
+    msg: 'キレイにする！',
+    test: ''
   }
   res.render('input', data);
 });
@@ -68,7 +69,8 @@ router.post('/post', function(req, res, next) {
       comments: rslt,
       classname: 'submit',
       url: '/show',
-      msg: '本音を言う'
+      msg: '本音を言う',
+      test: 'test'
     }
     res.render('input', data);
   } else {
