@@ -9,6 +9,9 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
     <script src="/javascripts/script.js"></script>
   </head>
   <body>
@@ -18,7 +21,19 @@
     </section>
     <section class="main">
       <div class="container">
-
+        <button type="button" class="button is-large" id="open">わたしがんばれ</button>
+          <!--modal window-->
+        <div class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <div class="box">
+              <h1>部屋の合言葉を入力</h1>
+              
+            </div>
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+          <!--ここまで-->
       </div>
     </section>
   </body>
