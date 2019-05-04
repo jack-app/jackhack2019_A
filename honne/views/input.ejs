@@ -26,14 +26,20 @@
         <!--入力フォーム -->
         <div class="input-area">
           <h1><%= pagetitle %></h1>
-          <div class="field">
+          <!-- <div class="field">
             <div class="control">
               <form><textarea class="textarea" placeholder="<%= comments %>"></textarea></form>
             </div>
-          </div>
+          </div> -->
           <div class="control">
             <form method="POST" action="<%= url %>">
+<<<<<<< HEAD
               <button class="button is-large input_btn <%= classname %>" type="submit"><%= msg %></button>
+=======
+              <textarea class="textarea" placeholder="<%= comments %>" name="">メイのバカ！</textarea>
+              <input type="text" name="word">
+              <button class="button is-large <%= classname %>" type="submit"><%= msg %></button>
+>>>>>>> 802ecd0490fe101fdc7c8f4eabbfb1e729906e47
             </form>
           </div>
         </div>
