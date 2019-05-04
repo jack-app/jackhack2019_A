@@ -33,18 +33,27 @@
           </div> -->
           <div class="control">
             <form method="POST" action="<%= url %>">
-<<<<<<< HEAD
-              <button class="button is-large input_btn <%= classname %>" type="submit"><%= msg %></button>
-=======
-              <textarea class="textarea" placeholder="<%= comments %>" name="">メイのバカ！</textarea>
-              <input type="text" name="word">
+              <textarea class="textarea" placeholder="<%= comments %>" name="word"></textarea>
               <button class="button is-large <%= classname %>" type="submit"><%= msg %></button>
->>>>>>> 802ecd0490fe101fdc7c8f4eabbfb1e729906e47
             </form>
           </div>
         </div>
         <!--ここまで-->
-
+        
+        <!-- 注意書き、不必要ならば消しておｋ
+          入力フォーム
+            pagetitle: '本音を教えて！',
+            comments: 'これが私の本心だよ。',
+            classname: 'clean',
+            url: '/input/post',
+            msg: 'キレイにする！'
+          結果出力
+            pagetitle: 'キレイになったよ！',
+            comments: rslt（キレイになった文章）,
+            classname: 'submit',
+            url: '/show',
+            msg: '本音を言う' 
+        -->
 
         <!--結果出力 -->
         <!-- <div class="output-area">
