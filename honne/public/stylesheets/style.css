@@ -1,7 +1,7 @@
 body{
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  background-color: #fff;
-  height: 100vh;
+  background-color: #c6e377;
+  height: 130vh;
   text-align: center;
 }
 
@@ -21,7 +21,19 @@ section{
 }
 
 .navbar{
-  background-color: #C9E6F7;
+  color: #fbfad3;
+  background-color: #c6e377;
+
+}
+
+.p_nav{
+  font-size: 2rem;
+}
+
+
+.home{
+  margin-right: 30px;
+  margin-left: 40px;
 }
 
 h1{
@@ -30,8 +42,8 @@ h1{
   padding-bottom: 4rem;
 }
 
-p{
-  ;
+h2{
+  font-size: 2rem;
 }
 
 
@@ -42,13 +54,29 @@ p{
 }
 
 .index_btn{
+  background-color: #fbfad3;
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.modal_btn{
+  margin-top: 3rem;
+  margin-right: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 /*ここまで*/
 
 
 /*input.ejs*/
+.body_index{
+  background-color: #729d39;
+}
+
+.navbar_index{
+  background-color: #729d39;
+}
+
 .input-area, .output-area{
   margin-top: 20vh;
   padding-bottom: 20vh;
@@ -60,13 +88,19 @@ p{
 }
 
 .button.clean{
-  background-color: #FFEEEE;
+  background-color: #fbfad3;
+  color: #36622b;
 }
 
 .button.submit{
-  background-color: #FF6B75;
-  color: #fff;
+  background-color: #36622b;
+  color: #fbfad3;
 }
+
+.h1_input{
+  color: #36622b;
+}
+
 /* ADD by Michiro */
 #test textarea{
   pointer-events: none; /*textarea入力不可にする*/
