@@ -14,9 +14,9 @@
             crossorigin="anonymous"></script>
     <script src="/javascripts/script.js"></script>
   </head>
-  <body>
+  <body class="body_index">
     <section class="header">
-      <div class="navbar">
+      <div class="navbar navbar_index">
       </div>
     </section>
     <section class="main">
@@ -25,10 +25,10 @@
           <h1>HONNNE</h1>
         </div>
         <div class="home">
-          <p>
+          <p class="p_nav">
             <button type="button" class="button is-large index_btn" id="create_open">部屋をつくる</button>
           </p>
-          <p>
+          <p class="p_nav">
             <button type="button" class="button is-large index_btn" id="enter_open">部屋に入る</button>
           </p>
         </div>
@@ -55,7 +55,7 @@
                 <p class="control">
                   <!--これを押すと部屋に入ってinputページにいく-->
                   <a href=" ./input">
-                    <button class="button is-primary is-medium">
+                    <button class="button is-primary is-medium modal_btn">
                       送信
                     </button>
                   </a>
@@ -63,7 +63,7 @@
                 </p>
                 <p class="control">
                   <!--これを押すと入力内容が消去される-->
-                  <button class="button is-light is-medium">
+                  <button class="button is-light is-medium modal_btn">
                     取り消す
                   </button>
                 </p>

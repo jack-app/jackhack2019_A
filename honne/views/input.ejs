@@ -18,6 +18,8 @@
   <body>
     <section class="header">
       <div class="navbar">
+        <p class="p_nav"><i class="fas fa-home home"></i></p>
+        <p class="p_nav"><h2>徹子の部屋</h2></p>
       </div>
     </section>
     <section class="main">
@@ -25,11 +27,11 @@
 
         <!--入力フォーム -->
         <div class="input-area">
-          <h1><%= pagetitle %></h1>
+          <h1 class="h1_input"><%= pagetitle %></h1>
           <div class="control">
             <form method="POST" action="<%= url %>" id="<%= test %>">
               <textarea class="textarea" placeholder="これが私の本心だよ。" name="word"><%= comments %></textarea>
-              <button class="button is-large <%= classname %>" type="submit"><%= msg %></button>
+              <button class="button is-large <%= classname %> input_btn" type="submit"><%= msg %></button>
             </form>
           </div>
         </div>
