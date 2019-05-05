@@ -1,7 +1,7 @@
 body{
   font-family: 'M PLUS Rounded 1c', sans-serif;
   background-color: #c6e377;
-
+  height: 110vh;
   text-align: center;
 }
 
@@ -21,13 +21,20 @@ section{
 }
 
 .navbar{
-  color: #fbfad3;
   background-color: #c6e377;
-
 }
 
-.p_nav{
+
+.nav_left{
+  display: block;
+  float: left;
+  width: 50vw;
   font-size: 2rem;
+}
+
+.nav_right{
+  display: block;
+  float: right;
 }
 
 
@@ -54,7 +61,12 @@ h2{
 
 
 
+
 /*index.ejs*/
+img{
+  height: 35vh;
+}
+
 .body_index{
   background-color: #729d39;
 }
@@ -65,13 +77,24 @@ h2{
 
 .logo{
   margin-top: 10vh;
+  margin-bottom: 2rem;
 }
 
 .index_btn{
   background-color: #fbfad3;
+}
+
+.p_nav_top{
   margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.p_nav_top{
+  margin-top: 2rem;
   margin-bottom: 4rem;
 }
+
+
 
 .modal_btn{
   margin-top: 3rem;

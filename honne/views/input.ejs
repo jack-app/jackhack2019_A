@@ -17,10 +17,26 @@
   </head>
   <body>
     <section class="header">
-      <div class="navbar">
-        <p class="p_nav"><i class="fas fa-home home"></i></p>
-        <p class="p_nav"><h2>徹子の部屋</h2></p>
-      </div>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <div class="buttons">
+            <a class="navbar-item" href=" ./show">
+              <i class="fas fa-home home fa-2x" style="color: #fbfad3"></i>
+              <h2 style="color: #fbfad3">徹子の部屋</h2>
+            </a>
+          </div>
+        </div>
+        <div class="navbar-end">
+           <div class="navbar-item">
+             <div class="buttons">
+               <a class="navbar-item" href=" ./">
+                 <i class="fas fa-sign-out-alt fa-2x home" style="color: #fbfad3"></i>
+                 <h2 style="color: #fbfad3">ログアウト</h2>
+               </a>
+             </div>
+           </div>
+         </div>
+      </nav>
     </section>
     <section class="main">
       <div class="container">
@@ -36,7 +52,7 @@
           </div>
         </div>
         <!--ここまで-->
-        
+
         <!-- 注意書き、不必要ならば消しておｋ
           入力フォーム
             pagetitle: '本音を教えて！',
