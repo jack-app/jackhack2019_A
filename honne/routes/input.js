@@ -4,7 +4,7 @@ var router = express.Router();
 var sqlite3 = require('sqlite3');
 var db = new sqlite3.Database('wordlog.sqlite3');
 
-var dic = require( '../../illdic-latest.json' );
+var dic = require( '../../illdic-sample.json' );
 const URL = "https://mecab-web-api.herokuapp.com/v1/parse";
 const request = require('sync-request');
 
